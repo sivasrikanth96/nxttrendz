@@ -1,0 +1,14 @@
+.header-container {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-family: 'Roboto';
+}
+.icons-container {
+  display: flex;
+}
+.header-image {
+  height: 50px;
+  width: 150px;
+}
