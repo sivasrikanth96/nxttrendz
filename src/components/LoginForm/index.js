@@ -1,7 +1,5 @@
 import {Component} from 'react'
 
-import Cookies from 'js-cookie'
-
 import './index.css'
 
 class LoginForm extends Component {
@@ -40,9 +38,8 @@ class LoginForm extends Component {
     this.setState({password: event.target.value})
   }
 
-  successPage = jwt => {
+  successPage = () => {
     const {history} = this.props
-    Cookies.set('jwt_token', jwt, {expires: 30})
     history.replace('/')
   }
 
@@ -65,7 +62,7 @@ class LoginForm extends Component {
         <form className="login-form-container" onSubmit={this.onSubmitForm}>
           <img
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-            alt="website login"
+            alt="website logo"
             className="website-logo-image"
           />
           <label className="label" htmlFor="usernames">
